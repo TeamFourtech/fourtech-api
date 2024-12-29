@@ -61,5 +61,7 @@ def send_it_staffing_email():
 
 # Ensure app listens on the correct host and port
 if __name__ == '__main__':
-  port = int(os.environ.get('PORT', 5000))
-app.run(host='0.0.0.0', port=port, debug=True)
+  if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # This will use the environment port provided by Render
+    app.run(host='0.0.0.0', port=port, debug=True)
+
