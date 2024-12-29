@@ -61,5 +61,5 @@ def send_it_staffing_email():
 
 # Ensure app listens on the correct host and port
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5001))  # Adjust port if needed
-    app.run(host='0.0.0.0', port=port, debug=True)
+  port = int(os.environ.get('PORT', 5000))
+app.run(host='0.0.0.0', port=port, debug=True)
