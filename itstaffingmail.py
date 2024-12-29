@@ -28,7 +28,7 @@ def send_email():
         )
 
         # Initialize Mailtrap client and send email
-        client = mt.MailtrapClient(token="********0d9e")  # Replace with your actual Mailtrap API token
+        client = mt.MailtrapClient(token="520298668e9603dcedc48913ac4b0d9e")  # Replace with your actual Mailtrap API token
         response = client.send(mail)
 
         return jsonify({"status": "success", "message": "Email sent successfully."}), 200
