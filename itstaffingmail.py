@@ -39,7 +39,7 @@ def send_it_staffing_email():
         )
 
         # Initialize Mailtrap client and send email
-        client = mt.MailtrapClient(token="YOUR_MAILTRAP_API_TOKEN")
+        client = mt.MailtrapClient(token="520298668e9603dcedc48913ac4b0d9e")
         response = client.send(mail)
 
         return jsonify({"status": "success", "message": "Email sent successfully."}), 200
